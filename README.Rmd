@@ -1,0 +1,59 @@
+---
+output: github_document
+bibliography: swhids.bib
+nocite: '@*'
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# swhidit
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of swhidit is to ...
+
+## Installation
+
+*TODO*: You can install the released version of swhidit from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("swhidit")
+```
+
+You can install the development version of swhidit from [GitHub](https://github.com/nfultz/swhidit) with:
+
+``` r
+remotes::install_github("nfultz/swhidit")
+```
+
+
+## Example
+
+This is a basic example which shows you how to fetch SWHIDs for all attached packages in your session: 
+
+```{r example, warning=FALSE}
+library(swhidit)
+library(jsonlite)
+swhidit()
+```
+
+which generates a bibtex database:
+
+```{r, echo=FALSE, comment=NA}
+cat(readLines("swhids.bib"), sep='\n')
+```
+
+which is then rendered using the appropriate tools:
+
+# References
+
