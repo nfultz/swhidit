@@ -6,7 +6,17 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of swhidit is to …
+The goal of `swhidit` is to generate software references for R projects
+using [Software Heritage Foundation Persistent
+Identifiers](https://docs.softwareheritage.org/devel/swh-model/persistent-identifiers.html).
+
+These can provide very fine-grained information about what software
+packages are used, down to the commit and file hash level, that can be
+key for replicating or auditing findings.
+
+[knitcitations](https://github.com/cboettig/knitcitations) is also
+useful, but typically generates citation entries for linked
+documentation eg manuals, JSS articles rather than the software itself.
 
 ## Installation
 
